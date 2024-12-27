@@ -12,16 +12,18 @@ The goal of the code is to clean up a customer data file (an Excel file with a l
 import pandas as pd
 import re
 
-"""" pandas (pd): A powerful library in Python used for data manipulation and analysis. It's often used to work with tables of data, like the one in your Excel file.
- re: A library for working with regular expressions (used to match or search patterns in text).""""
+""""
+- pandas (pd): A powerful library in Python used for data manipulation and analysis. It's often used to work with tables of data, like the one in your Excel file.
+- re: A library for working with regular expressions (used to match or search patterns in text).""""
 ```
 ### 2. Loading the Data
 ```python
 df = pd.read_excel(r'C:\Users\user\Downloads\My Projects\Python\Customer Call List.xlsx')
 df
 
-"""" This line reads the Excel file located at the specified path (Customer Call List.xlsx) and stores the data in a DataFrame (which is like a table or a spreadsheet in Python).
- df is the variable that holds this data.""""
+""""
+- This line reads the Excel file located at the specified path (Customer Call List.xlsx) and stores the data in a DataFrame (which is like a table or a spreadsheet in Python).
+- df is the variable that holds this data.""""
 ```
 ### 3. Removing Duplicates
 ```python
