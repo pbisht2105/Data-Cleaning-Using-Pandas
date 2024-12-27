@@ -150,3 +150,9 @@ The cleaned data is now ready for analysis. The following changes have been made
 - Rows with missing phone numbers or marked as "Do Not Contact" are deleted.
 - Filled in missing values and replaced unnecessary placeholders like "NaN" or "N/a" with empty strings.
 - The DataFrame is reset to ensure row numbers are in order.
+
+## Author
+
+This project was created and maintained by [Pankaj Singh Bisht](https://github.com/pbisht2105).
+
+You can contact me at: [pbisht2105@gmail.com](mailto:pbisht2105@gmail.com).
