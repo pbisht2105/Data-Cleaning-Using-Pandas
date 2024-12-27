@@ -1,4 +1,5 @@
 # Data Cleaning in Pandas
+![Pandas Project cover](https://github.com/pbisht2105/Data-Cleaning-Using-Pandas/blob/main/Data%20Cleaning%20using%20Pandas.png)
 
 ## Goal of the Code
 
@@ -11,27 +12,29 @@ The goal of the code is to clean up a customer data file (an Excel file with a l
 import pandas as pd
 import re
 ```
-- pandas (pd): A powerful library in Python used for data manipulation and analysis. It's often used to work with tables of data, like the one in your Excel file.
-- re: A library for working with regular expressions (used to match or search patterns in text).
+-- pandas (pd): A powerful library in Python used for data manipulation and analysis. It's often used to work with tables of data, like the one in your Excel file.
+-- re: A library for working with regular expressions (used to match or search patterns in text).
 
 ### 2. Loading the Data
 ```python
 df = pd.read_excel(r'C:\Users\user\Downloads\My Projects\Python\Customer Call List.xlsx')
 df
 ```
-- This line reads the Excel file located at the specified path (Customer Call List.xlsx) and stores the data in a DataFrame (which is like a table or a spreadsheet in Python).
-- df is the variable that holds this data.
+-- This line reads the Excel file located at the specified path (Customer Call List.xlsx) and stores the data in a DataFrame (which is like a table or a spreadsheet in Python).
+-- df is the variable that holds this data.
 
 ### 3. Removing Duplicates
 ```python
 df = df.drop_duplicates()
--- This removes any duplicate rows in the data. If two rows have the exact same information, one of them will be deleted.
 ```
+-- This removes any duplicate rows in the data. If two rows have the exact same information, one of them will be deleted.
+
 ### 4. Dropping a Column
 ```python
 df = df.drop(columns='Not_Useful_Column')
-This line removes a column called 'Not_Useful_Column' from the data because it is not needed for further analysis.
 ```
+-- This line removes a column called 'Not_Useful_Column' from the data because it is not needed for further analysis.
+
 ### 5. Cleaning up the 'Last_Name' Column
 ```python
 df['Last_Name'] = df['Last_Name'].str.strip('/_.')
